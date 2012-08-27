@@ -184,7 +184,6 @@ public class MainWindow extends javax.swing.JFrame
     private void lstBranchesValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstBranchesValueChanged
         AppRuntime.getCurrentRepoReader()
                 .addCommitListListener(this);
-        System.out.println(lstBranches.getSelectedValue() + " selected");
         AppRuntime.getCurrentRepoReader()
                 .readCommits((Branch) lstBranches.getSelectedValue());
 }//GEN-LAST:event_lstBranchesValueChanged
